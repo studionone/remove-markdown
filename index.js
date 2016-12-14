@@ -2,8 +2,7 @@
  * This is a copy of https://github.com/stiang/remove-markdown plugin with some modifications
  * Plugin doesn't looks like is up to date and existing issues hasn't been resolved.
  */
-export default function(md, options)
-{
+module.exports = function(md, options) {
     options = options || {};
     options.stripListLeaders = options.hasOwnProperty('stripListLeaders') ? options.stripListLeaders : true;
     options.gfm = options.hasOwnProperty('gfm') ? options.gfm : true;
@@ -56,4 +55,4 @@ export default function(md, options)
     }
 
     return output;
-}
+};
